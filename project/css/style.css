@@ -1,0 +1,169 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styles */
+header {
+    background-color: red;
+    color: rgb(254, 248, 248);
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo img {
+    width: 360px;
+    height: auto;
+}
+
+/* Navigation styles */
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: right;
+    margin: 20px 0;
+}
+
+ul li {
+    margin: 0 15px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #ffddc1;
+}
+
+/* Main Section */
+main {
+    position: relative;
+    background-image: url('/project/png/bg.png'); /* bg.png as background */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the background image */
+    height: 80vh; /* 80% of the viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+/* Logo container */
+main .logo-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .logo-container img {
+    width: 200px; /* Adjust the size of the logo */
+    height: auto;
+}
+
+main .slogan {
+    font-size: 24px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+main .search-container {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main input {
+    padding: 12px;
+    width: 240%;
+    border: 2px solid red;
+    border-radius: 30px;
+    font-size: 16px;
+    outline: none;
+   
+}
+
+main input:focus {
+    border-color: #ffddc1;
+}
+
+/* Footer */
+footer {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    width: 100%;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+    main .logo-container img {
+        width: 150px;
+    }
+    main .slogan {
+        font-size: 18px;
+    }
+    main input {
+        width: 90%;
+    }
+}
+
+}
+
+/* New CSS for navigation bar hover effect */
+nav a {
+    text-decoration: none;
+    color: black; /* Default link color */
+    padding: 10px;
+    transition: color 0.3s ease, background-color 0.3s ease, text-decoration 0.3s ease;
+}
+
+nav a:hover {
+    color: white; /* Color on hover */
+    background-color: black; /* Background color on hover */
+    border-radius: 5px; /* Optional: Add some rounding to the corners */
+    text-decoration: underline; /* Underline on hover */
+}
+@keyframes popup {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  header .logo img {
+    width: 360px;
+    height: auto;
+    animation: popup 0.5s ease-in-out;
+  }

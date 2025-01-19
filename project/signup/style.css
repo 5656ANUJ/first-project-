@@ -1,0 +1,100 @@
+/* General Reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin: 20px 0;
+}
+
+div {
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="email"] {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover and focus effects for inputs */
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #ff5722;
+    box-shadow: 0 0 5px rgba(255, 87, 34, 0.5);
+}
+
+/* Button Styles */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff5722;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effects for buttons */
+button:hover {
+    background-color: #e64a19;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Terms container */
+.terms-container {
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 14px;
+    color: #555;
+}
+
+.terms-container input {
+    margin-right: 5px;
+}
+
+/* Link styles */
+a {
+    color: #ff5722;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #e64a19;
+    text-decoration: underline;
+}
+
+/* Divider line */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin: 20px auto;
+    width: 80%;
+}
